@@ -1,14 +1,9 @@
-.nav{
-	background-color: #3a3636;
-	text-align: center;
+.profile{
+	float: right;
 	color: white;
-	height: 60px;
-	line-height: 60px;
-	overflow: hidden;
 
 	&__list{
-		float: left;
-		text-align: left;
+		text-align: right;
 		font-size: 0;
 	}
 
@@ -22,13 +17,7 @@
 			background-color: #4a4646;
 		}
 	}
-
-	&__title{
-		display: inline-block;
-		margin: 0;
-	}
 	&__link{
 		color: white;
 	}
-
 }

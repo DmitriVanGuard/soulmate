@@ -1,9 +1,3 @@
-<div class="blur"></div>
-<header class="header">
-	<h1 class="header__title">
-		Find your soulmate
-	</h1>
-</header>
 <div class="sign-in">
 	<h2 class="sign-in__title">Войти</h2>
 	<form action="" method="post" class="sign-in__form">

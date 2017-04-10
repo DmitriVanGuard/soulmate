@@ -1,0 +1,21 @@
+%background{
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+%center{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
