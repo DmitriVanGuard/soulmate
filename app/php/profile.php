@@ -12,7 +12,7 @@
 			<div class="container">
 				<div class="profile">
 					<div class="profile__pic">
-						<img src="" alt="My photo">
+						<img src="img/content/ava.jpg" alt="My photo">
 					</div>
 				</div>
 			</div>
