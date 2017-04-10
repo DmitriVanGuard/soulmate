@@ -1,1 +1,86 @@
-@import 'settings';
+body, html{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	background-color: #eee;
+}
+
+ul, li{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+a{
+	color: black;
+}
+
+
+.container{
+	max-width: 900px;
+	max-height: 100%;
+	margin: 0 auto;
+}
+
+.nav{
+	background-color: #3a3636;
+	text-align: center;
+	color: white;
+	height: 60px;
+	line-height: 60px;
+
+	&__list{
+		float: left;
+		text-align: left;
+		font-size: 0;
+	}
+
+	&__item{
+		font-size: 14px;
+		display: inline-block;
+		padding: 0 15px;
+		transition: background-color 150ms;
+
+		&:hover{
+			background-color: #4a4646;
+		}
+	}
+
+	&__title{
+		display: inline-block;
+		margin: 0;
+	}
+	&__link{
+		color: white;
+	}
+
+}
+
+.profile{
+	float: right;
+	color: white;
+
+	&__list{
+		text-align: right;
+		font-size: 0;
+	}
+
+	&__item{
+		font-size: 14px;
+		display: inline-block;
+		padding: 0 15px;
+		transition: background-color 150ms;
+
+		&:hover{
+			background-color: #4a4646;
+		}
+	}
+	&__link{
+		color: white;
+	}
+
+}
