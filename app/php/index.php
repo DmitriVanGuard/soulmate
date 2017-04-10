@@ -4,8 +4,12 @@
 		require_once "includes/head.php"; 
 	?>
 	<body>
-		<?php 
-			require_once 'includes/nav.php';
-		 ?>
+		<div class="wrapper wrapper_welcome">
+			 <div class="container">
+			 	<?php
+					require_once 'includes/signin.php';
+			 	?>
+			 </div>
+		</div>
 	</body>
 </html>

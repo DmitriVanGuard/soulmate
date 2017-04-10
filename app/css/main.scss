@@ -3,10 +3,26 @@ body, html{
 	margin: 0;
 	width: 100%;
 	height: 100%;
+	font-family: arial;
+	overflow: hidden;
+	box-sizing: border-box;
 }
 
-body{
-	background-color: #eee;
+*{
+	box-sizing: inherit;
+}
+
+.blur{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 0;
+	background-image: url('../img/bg/sky.jpg');
+	@extend %background;
+	filter: blur(4px);
+	transform: scale(1.03); //Чтобы убрать белые края
 }
 
 ul, li{
@@ -17,6 +33,7 @@ ul, li{
 
 a{
 	color: black;
+	text-decoration: none;
 }
 
 
@@ -24,6 +41,7 @@ a{
 	max-width: 900px;
 	max-height: 100%;
 	margin: 0 auto;
+	@extend %clearfix;
 }
 
 .nav{
@@ -32,6 +50,7 @@ a{
 	color: white;
 	height: 60px;
 	line-height: 60px;
+	overflow: hidden;
 
 	&__list{
 		float: left;
@@ -82,5 +101,94 @@ a{
 	&__link{
 		color: white;
 	}
+}
 
+.sign-in{
+	background-color: rgba(16, 100, 133, 0.6);
+	padding: 20px;
+	display: inline-block;
+	width: 30%;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: 0 0 4px #555;
+	z-index: 2;
+	@extend %center;
+	
+	&__title{
+		text-transform: uppercase;
+		color: #fff;
+	}
+
+	&__form{
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	&__input{
+		margin-bottom: 10px;
+		border: none;
+		outline: none;
+		width: 100%;
+		height: 20px;
+		border-radius: 2px;
+		text-align: center;
+		background: none;
+		height: 40px;
+		color: #fff;
+		border-bottom: 2px solid #fff;
+	}
+
+	&__btn{
+		margin-top: 20px;
+		border: none;
+		background: rgb(16, 100, 133);
+		color: #fff;
+		border-radius: 10px;
+		padding: 10px 20px;
+		font-weight: bold;
+		width: 100%;
+		text-transform: uppercase;
+		cursor: pointer;
+		margin-bottom: 20px;
+	}
+
+	&__reg{
+		color: #fff;
+		font-weight: lighter;
+	}
+}
+
+.header{
+	@extend %center;
+	z-index: 1;
+	color: rgba(255, 255, 255, 0.5);
+	text-align: center;
+	
+	&__title{
+		font-size: 7em;
+		font-weight: lighter;
+	}
+}
+
+
+%background{
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+%center{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
