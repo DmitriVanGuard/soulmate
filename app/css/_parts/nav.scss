@@ -1,15 +1,22 @@
 .nav{
-	background-color: #3a3636;
+	background-color: rgb(16, 100, 133);
 	text-align: center;
 	color: white;
 	height: 60px;
 	line-height: 60px;
 	overflow: hidden;
-
+	
 	&__list{
-		float: left;
 		text-align: left;
 		font-size: 0;
+
+		&_left{
+			float: left;
+		}
+
+		&_right{
+			float: right;
+		}
 	}
 
 	&__item{
@@ -19,7 +26,7 @@
 		transition: background-color 150ms;
 
 		&:hover{
-			background-color: #4a4646;
+			background-color: rgb(21, 115, 148);
 		}
 	}
 
