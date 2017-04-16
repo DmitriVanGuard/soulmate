@@ -5,7 +5,13 @@
 	}
 
 	&__btn{
-		color: #106485;
+		color: #157394;
+		margin-right: 10px;
+		font-weight: bold;
+
+		&:hover{
+			color: #106485;
+			
+		}
 	}
-	
 }

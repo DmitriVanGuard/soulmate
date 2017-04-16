@@ -1,6 +1,6 @@
 <div class="sign">
 	<h2 class="sign__title">Войти</h2>
-	<form action="" method="post" class="sign__form">
+	<form action="signin.php" method="post" class="sign__form">
 		<input type="text" name="username" class="sign__input" placeholder="Имя пользователя" require>
 		<br>
 		<input type="password"name="password" class="sign__input" placeholder="Пароль" required>

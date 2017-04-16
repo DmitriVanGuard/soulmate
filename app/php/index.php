@@ -1,3 +1,11 @@
+<?php 
+require_once "dynamic/config.php";
+$conn = new mysqli($dbhost, $dbuser, $dbpass, $dbname); // Подключаемся к БД
+if( $conn -> connect_error ) die(fatal_error($conn -> connect_error)); // Если ошибка то убиваем подключение
+
+
+ ?>
+
 <!DOCTYPE html>
 <html lang="RU-ru">
 	<?php 

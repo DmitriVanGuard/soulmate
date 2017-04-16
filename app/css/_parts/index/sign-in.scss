@@ -8,6 +8,7 @@
 	box-shadow: 0 0 4px #555;
 	z-index: 2;
 	@extend %center;
+	min-width: 350px;
 	
 	&__title{
 		text-transform: uppercase;

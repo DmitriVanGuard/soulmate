@@ -14,7 +14,7 @@
 	</div>
 	<hr class="article__line horizontal-line">
 	<div class="article__menu">
-		<a href="#" class="article__btn article__btn_like">Like</a>
-		<a href="#" class="article__btn article__btn_comment">Comments</a>
+		<a href="#" class="article__btn article__btn_like">Like <span class="count">0</span></a>
+		<a href="#" class="article__btn article__btn_comment">Comments <span class="count">0</span></a>
 	</div>
 </article>
