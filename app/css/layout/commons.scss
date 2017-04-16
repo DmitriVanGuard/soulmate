@@ -17,3 +17,11 @@
 	filter: blur(4px);
 	transform: scale(1.03); //Чтобы убрать белые края
 }
+
+.horizontal-rule{
+	margin: 15px 0;
+	background-color: #bbb;
+	border-color: #bbb;
+	height: 1px;
+	border: 0 
+}

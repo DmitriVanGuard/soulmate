@@ -8,5 +8,13 @@
 			</h3>
 		</div>
 	</div>
-	.article__text
+	<div class="article__content">
+		<p class="article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nam at, eligendi, illo sed ducimus magni amet praesentium dicta, vero suscipit! Ullam necessitatibus inventore, perspiciatis labore deleniti nesciunt odit dolorum!</p>
+		<p class="article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque nihil hic rem. Magnam architecto fugiat, nobis fuga excepturi minima tempore voluptas libero, ipsam, rerum quo, eum itaque beatae! Quam, ex!</p>
+	</div>
+	<hr class="article__line horizontal-line">
+	<div class="article__menu">
+		<a href="#" class="article__btn article__btn_like">Like</a>
+		<a href="#" class="article__btn article__btn_comment">Comments</a>
+	</div>
 </article>
